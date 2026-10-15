@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#b71c1c">
+<title>MeToo: how to use</title>
+<style>
+body{margin:0;background:#fff;color:#222;font:16px/1.55 system-ui,-apple-system,sans-serif}
+header{background:#b71c1c;color:#fff;padding:20px 16px}
+header h1{margin:0;font-size:24px} header a{color:#fff}
+main{max-width:640px;margin:0 auto;padding:8px 16px 48px}
+h2{margin:28px 0 8px;font-size:20px;color:#b71c1c}
+ol,ul{padding-left:22px;margin:6px 0} li{margin:5px 0}
+.box{background:#fff3e0;border-radius:12px;padding:12px 14px;margin:12px 0}
+.tip{background:#eceff1;border-radius:12px;padding:12px 14px;margin:12px 0}
+.tabs{display:flex;gap:8px;margin:16px 0 0}
+.tabs button{flex:1;padding:12px;border:2px solid #b71c1c;background:#fff;color:#b71c1c;font:700 16px system-ui;border-radius:10px}
+.tabs button.on{background:#b71c1c;color:#fff}
+.sec[hidden]{display:none}
+</style></head><body>
+<header><h1>How to use MeToo</h1><a href="./">Back to the app</a></header>
+<main>
+
+<h2>What the app does</h2>
+<ul>
+<li><b>2 taps:</b> your trusted contacts get a message with your location.</li>
+<li><b>3 taps:</b> loud siren, and your contacts are alerted. The siren stops only with your PIN.</li>
+<li><b>Get help:</b> rights, counselling, how to file a complaint, and private notes. Everything stays on your phone.</li>
+</ul>
+<div class="box"><b>Important:</b> a website cannot send a text by itself. After 2 taps the message opens ready to go, and you press <b>Send</b>. Only the Android APK app sends automatically.</div>
+
+<div class="tabs"><button id="bi" class="on">iPhone</button><button id="ba">Android</button></div>
+
+<div class="sec" id="iphone">
+<h2>1. Install (iPhone)</h2>
+<ol>
+<li>Open the MeToo link in <b>Safari</b> (not Chrome).</li>
+<li>Tap the <b>Share</b> button (square with arrow).</li>
+<li>Tap <b>Add to Home Screen</b>, then <b>Add</b>.</li>
+</ol>
+<h2>2. Give permission</h2>
+<ol>
+<li>Open the installed MeToo app. When it asks for location, tap <b>Allow While Using App</b>.</li>
+<li>If you tapped Don't Allow: <b>Settings &gt; Privacy &amp; Security &gt; Location Services</b>. Make sure it is On. Scroll to <b>Safari Websites</b> (or <b>MeToo</b>) and choose <b>While Using the App</b>. Turn on <b>Precise Location</b>.</li>
+<li>In MeToo, Contacts tab, tap <b>Check location</b>. It should say "Location works".</li>
+</ol>
+<h2>3. Set up</h2>
+<ol>
+<li>Contacts tab: add 2 trusted people.</li>
+<li>Set a <b>PIN</b>. Without a PIN anyone can stop the siren.</li>
+</ol>
+<h2>4. Emergency icon</h2>
+<ol>
+<li>In Safari, open the MeToo link and add <code>panic.html</code> at the end of it.</li>
+<li>Share &gt; <b>Add to Home Screen</b>. This is the red "MeToo SOS" icon.</li>
+<li>Tap the icon once (that is tap 1), then touch the screen once more within 2.5 seconds (alert), or twice more (siren).</li>
+</ol>
+<div class="tip"><b>Siren volume:</b> raise your phone volume and turn off Silent mode (the switch on the side). The browser cannot do this for you.</div>
+</div>
+
+<div class="sec" id="android" hidden>
+<h2>1. Install (Android website version)</h2>
+<ol>
+<li>Open the MeToo link in <b>Chrome</b>.</li>
+<li>Tap the menu (three dots), then <b>Install app</b> or <b>Add to Home screen</b>.</li>
+</ol>
+<h2>2. Give permission</h2>
+<ol>
+<li>When asked for location, tap <b>While using the app</b> and turn on <b>Use precise location</b>.</li>
+<li>If you said no: long-press the MeToo icon &gt; <b>App info</b> (or Chrome &gt; Settings &gt; Site settings &gt; Location) &gt; Permissions &gt; Location &gt; Allow.</li>
+<li>Contacts tab &gt; <b>Check location</b>.</li>
+</ol>
+<h2>3. APK app (automatic SMS)</h2>
+<ol>
+<li>Install the APK file you were given. Allow "install unknown apps" if asked.</li>
+<li>On first launch allow <b>Location</b>, then <b>SMS</b>.</li>
+<li>If SMS is greyed out: Settings &gt; Apps &gt; MeToo &gt; three dots &gt; <b>Allow restricted settings</b>. Then Permissions &gt; SMS &gt; Allow.</li>
+<li>Set a screen lock (PIN, pattern or fingerprint) on the phone. The siren is stopped with it.</li>
+</ol>
+<h2>4. Set up</h2>
+<ol><li>Contacts tab: add 2 trusted people. Test with your own number first.</li></ol>
+</div>
+
+<h2>How to use in an emergency</h2>
+<ol>
+<li>Tap the app icon. Opening it is tap 1.</li>
+<li>Touch the screen once more within 2.5 seconds: your contacts get your location.</li>
+<li>Touch twice more: siren starts.</li>
+<li>To stop the siren, enter your PIN (APK app: phone password or fingerprint).</li>
+</ol>
+<div class="tip">Opened it by mistake? Do nothing for 2.5 seconds and nothing is sent.</div>
+
+<h2>Test before you need it</h2>
+<ul>
+<li>Use your own number as a contact.</li>
+<li>Do a 2-tap test, then a 3-tap test with the volume low.</li>
+<li>Tell your contacts about MeToo so they know what the message means.</li>
+</ul>
+
+<h2>Privacy</h2>
+<ul>
+<li>Contacts, notes and PIN stay on this phone only. Nothing is uploaded.</li>
+<li>Use <b>Quick exit</b> (top of the app) to leave fast. It does not stop a running siren.</li>
+<li>You can set an app lock PIN so others cannot open your notes.</li>
+</ul>
+
+<h2>Not working?</h2>
+<ul>
+<li>No siren sound: volume up, Silent mode off, touch the screen once.</li>
+<li>No location: check the permission steps above, and turn on GPS / Location Services.</li>
+<li>Old version showing: close the app fully and open it again.</li>
+</ul>
+<div class="box">In danger right now? Call <a href="tel:112"><b>112</b></a>. Women helpline: <a href="tel:181"><b>181</b></a>.</div>
+</main>
+<script>
+function pick(a){document.getElementById('iphone').hidden=!a;document.getElementById('android').hidden=a;
+ document.getElementById('bi').className=a?'on':'';document.getElementById('ba').className=a?'':'on';}
+document.getElementById('bi').onclick=function(){pick(true)};
+document.getElementById('ba').onclick=function(){pick(false)};
+if(/android/i.test(navigator.userAgent))pick(false);
+</script>
+</body></html>

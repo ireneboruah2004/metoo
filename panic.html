@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#b71c1c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MeToo SOS">
+<link rel="manifest" href="manifest-sos.webmanifest">
+<link rel="apple-touch-icon" href="icon-sos-180.png">
+<title>MeToo SOS</title>
+<style>
+body{margin:0;padding:24px;min-height:100vh;background:#b71c1c;color:#fff;font:16px/1.5 system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;justify-content:center;gap:10px}
+h1{margin:0 0 6px;font-size:28px} a{color:#fff;font-weight:700}
+.box{background:rgba(0,0,0,.25);border-radius:14px;padding:14px}
+</style></head>
+<body>
+<div id="go"><h1>Starting emergency...</h1><p>If nothing happens, <a href="./?panic=1">tap here</a>.</p></div>
+<div id="install" hidden>
+  <h1>Emergency icon</h1>
+  <div class="box"><b>Add this to your home screen</b><br>
+    iPhone (Safari): tap Share, then Add to Home Screen.<br>
+    Android (Chrome): tap the menu, then Install app or Add to home screen.</div>
+  <div class="box"><b>Warning</b><br>Opening this icon counts as tap 1. Tap the screen once more within 2.5 seconds: your contacts get your location. Tap twice more: siren, until you enter your PIN. If you do nothing, nothing happens.</div>
+  <p>Set up your contacts and PIN in the main app first: <a href="./">open the app</a>.</p>
+  <p>Want to test it? <a href="./?panic=1">Test it</a></p>
+</div>
+<script>
+var standalone = !!(navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches));
+if (standalone) { location.replace('./?panic=1'); }
+else { document.getElementById('go').hidden = true; document.getElementById('install').hidden = false; }
+</script>
+</body></html>
